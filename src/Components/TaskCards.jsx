@@ -3,7 +3,7 @@ import SideBar from "./SideBar";
 import "../TaskCards.css";
 import Card from "./Card";
 import axios from "axios";
-import { Button } from "@/components/ui/button";
+
 import {
   Dialog,
   DialogContent,
@@ -14,7 +14,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+
 import { Textarea } from "./ui/textarea";
 
 const TaskCards = () => {
