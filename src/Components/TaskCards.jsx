@@ -12,10 +12,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
+} from "@/Components/ui/dialog";
 import { Input } from "@/Components/ui/input";
-
-import { Textarea } from "./ui/textarea";
+import Textarea from "@/Components/ui/textarea";
 
 const TaskCards = () => {
   const [tasks, setTasks] = useState([]);
