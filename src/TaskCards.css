@@ -1,0 +1,27 @@
+#all-comp {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+/* #tasks {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 1200px;
+} */
+
+#tasks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px; /* Small gap between rows */
+  justify-content: start;
+  align-items: start; /* Makes all cards in a row the same height */
+  padding: 0;
+  max-width: 1200px;
+  margin: 19px;
+  overflow-x: hidden;
+}
