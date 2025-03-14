@@ -14,7 +14,7 @@ import {
   DialogTrigger,
 } from "@/Components/ui/dialog";
 import { Input } from "@/Components/ui/input";
-import Textarea from "@/Components/ui/Textarea";
+import { Textarea } from "./ui/textarea";
 
 const TaskCards = () => {
   const [tasks, setTasks] = useState([]);
