@@ -35,7 +35,7 @@ const TaskCards = () => {
   function saveEditTask(taskId) {
     axios
       .patch(
-        `http://localhost:3000/tasks/edit/${taskId}`,
+        `https://task-manager-auth-sable.vercel.app/${taskId}`,
         {
           taskTitle: EditTasks,
           taskDescription: editDescription,
@@ -69,7 +69,7 @@ const TaskCards = () => {
   function saveTask() {
     axios
       .post(
-        "http://localhost:3000/tasks/add",
+        "https://task-manager-auth-sable.vercel.app/tasks/add",
         {
           taskTitle: EditTasks,
           taskDescription: editDescription,
@@ -95,7 +95,7 @@ const TaskCards = () => {
 
   function deleteTask(id) {
     axios
-      .delete(`http://localhost:3000/tasks/remove/${id}`, {
+      .delete(`https://task-manager-auth-sable.vercel.app/${id}`, {
         withCredentials: true,
       })
       .then((response) => {
@@ -109,7 +109,7 @@ const TaskCards = () => {
 
   function getAllTasks() {
     axios
-      .get("http://localhost:3000/tasks/all", {
+      .get("https://task-manager-auth-sable.vercel.app/all", {
         withCredentials: true,
       })
       .then((Response) => {
