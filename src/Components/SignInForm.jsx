@@ -13,10 +13,13 @@ const SignInForm = () => {
     e.preventDefault();
 
     // Send the username and password to the signUp endpoint
-    const response = await axios.post("http://localhost:3000/auth/SignUp", {
-      username,
-      password,
-    });
+    const response = await axios.post(
+      "https://task-manager-auth-sable.vercel.app/auth/SignUp",
+      {
+        username,
+        password,
+      }
+    );
     setError(response.data.message);
     console.log(response);
     // Optionally, reset the form fields
