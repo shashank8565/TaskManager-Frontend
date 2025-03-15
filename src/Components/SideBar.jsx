@@ -10,9 +10,12 @@ const SideBar = ({ funcOpenDialog }) => {
   const navigate = useNavigate();
   const handleLogout = async () => {
     try {
-      await axios.get("http://localhost:3000/auth/Logout", {
-        withCredentials: true, // Ensures cookies are sent with request
-      });
+      await axios.get(
+        "https://task-manager-auth-sable.vercel.app/auth/Logout",
+        {
+          withCredentials: true, // Ensures cookies are sent with request
+        }
+      );
 
       // Clear local storage or user state (if used)
 
